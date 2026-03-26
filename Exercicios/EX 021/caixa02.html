@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+            margin: 0;
+
+        }
+        header {
+            background-color: rgb(0, 49, 0);
+            color: white;
+            padding: 20px;
+            
+        }
+        header h1 {
+            text-align: center;
+            padding-bottom: 10px;
+            
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: green;
+            padding: 10px;
+            box-shadow: green 0px 4px 8px;
+            border-radius: 20px;
+         
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid white;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 10px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgb(96, 255, 109);
+            padding: 20px; 
+            border-radius: 30px;      
+        }
+        main h2 {
+            color: green;
+            font-weight: bold;
+            text-decoration: underline;          
+        }
+        main article {
+            border: 2px solid green;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        
+        }
+        footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer > p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palmeiras Campeão</h1>
+        <nav>
+            
+                <a href="#">Home</a>
+                <a href="#">Notícias</a>
+                <a href="#">Jogos</a>
+                <a href="#">Contato</a>
+            
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Notícias</h2>
+            <article>
+                <h3>Palmeiras vence o campeonato</h3>
+                <p>O Palmeiras venceu o campeonato brasileiro de futebol de 2024, conquistando o título com uma campanha impressionante. O time mostrou um desempenho sólido ao longo da temporada, garantindo a vitória com uma rodada de antecedência.</p>
+            </article>
+            <article id="jogadores">
+                <h3>Jogadores em destaque</h3>
+                <p>Dentre os jogadores que se destacaram na campanha vitoriosa do Palmeiras, estão o atacante Gabriel Jesus, que foi o artilheiro do time, e o meio-campista Raphael Veiga, que foi fundamental na criação de jogadas e assistências.</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright © 2024 Palmeiras Futebol Clube. Todos os direitos reservados.</p>   
+
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!-- O atributo target é usado para indicar onde o link deve ser aberto. O valor do atributo target pode ser "_blank" para abrir o link em uma nova janela ou guia, "_self" para abrir o link na mesma janela ou guia, "_parent" para abrir o link na janela ou guia pai, ou "_top" para abrir o link na janela ou guia superior. O atributo rel é usado para indicar a relação entre o documento atual e o documento vinculado. O valor do atributo rel pode ser "external" para indicar que o link é para um site externo, "nofollow" para indicar que os motores de busca não devem seguir o link, ou "noopener" para indicar que a nova janela ou guia não deve ter acesso ao objeto window.opener. -->
+    <p>Você pode acessar o repositorio do Gustavo guanara <a href="http://gustavoguanabara.github.io/" target="_blank" rel="external">clicando aqui</a> </p>
+    <p>Você tambem pode acessar o canal no Youtube <a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="external">clicando aqui</a></p>
+    
+    <h1>Usando links internos</h1>
+    <!-- O atributo rel é usado para indicar a relação entre o documento atual e o documento vinculado. O valor do atributo rel pode ser "prev" para indicar que o link é para a página anterior, "next" para indicar que o link é para a próxima página, ou "nofollow" para indicar que os motores de busca não devem seguir o link. -->
+    <p>Esta é a primeira página do meu site. Você pode acessar a <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de noticias</a> 
+       
+        
+    <h1>Usando links para downloads</h1>  
+      <p>Baixar PDF das aulas</p>
+ 
+     <ul> <!-- O atributo download é usado para indicar que o link é para download, e o valor do atributo é o nome do arquivo que será baixado. O atributo type é usado para indicar o tipo de arquivo que está sendo baixado. -->
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf"> Baixar PDF</a></li>
+        <li><a href="livro/pdf10.zip.zip" download="pdf10.zip.zip" type="application/zip"> Baixar PDF compactado</a></li>
+
+
+
+
+
+     </ul>
+
+</body>
+</html>

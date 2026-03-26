@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho da janela do navegador.</p>
+    <!-- O elemento picture é usado para exibir imagens diferentes dependendo do tamanho da tela do dispositivo. Ele é útil para criar designs responsivos e otimizar o carregamento de imagens em dispositivos móveis. -->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <!-- O elemento audio é usado para incorporar arquivos de áudio em uma página da web. Ele suporta vários formatos de áudio, como MP3, OGG e WAV. Você pode usar o atributo controls para exibir os controles de reprodução, autoplay para iniciar a reprodução automaticamente e loop para repetir o áudio continuamente. -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/beanie.mp3" type="audio/mp3">
+        <source src="midia/beanie.ogg" type="audio/ogg">
+       <p> Seu navegador não suporta o elemento de áudio. <a href="midia/beanie.mp3">Clica aqui para baixar o áudio</a></p>
+    </audio>
+    
+
+
+</body>
+</html>
