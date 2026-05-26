@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
 </head>
+
 <body>
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
@@ -14,9 +16,7 @@
         </p>
         <p>
             <label for="iidade">Sua idade é:</label>
-            <output name="idade" id="iidade">
-                
-            </output>
+            <output name="idade" id="iidade"></output>
         </p>
         <p>
             <input type="submit" value="Enviar">
@@ -24,19 +24,20 @@
         </p>
     </form>
     <script>
-                    const anoAtual = new Date().getFullYear();
-                    const inputAno = document.getElementById('iano');
-                    const outputIdade = document.getElementById('iidade');
+        const anoAtual = new Date().getFullYear();
+        const inputAno = document.getElementById('iano');
+        const outputIdade = document.getElementById('iidade');
 
-                    inputAno.addEventListener('input', function() {
-                        const anoNascimento = Number(inputAno.value);
-                        if (anoNascimento >= 1900 && anoNascimento <= anoAtual) {
-                            const idade = anoAtual - anoNascimento;
-                            outputIdade.value = idade;
-                        } else {
-                            outputIdade.value = '';
-                        }
-                    });
-                </script>
+        inputAno.addEventListener('input', function () {
+            const anoNascimento = Number(inputAno.value);
+            if (anoNascimento >= 1900 && anoNascimento <= anoAtual) {
+                const idade = anoAtual - anoNascimento;
+                outputIdade.value = idade;
+            } else {
+                outputIdade.value = '';
+            }
+        });
+    </script>
 </body>
+
 </html>
